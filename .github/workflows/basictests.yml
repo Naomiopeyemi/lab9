@@ -1,0 +1,24 @@
+
+name: Lab9 Basic Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lab9-basic-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Make script executable
+        run: chmod +x validate-data.sh
+
+      - name: Run basic tests
+        run: |
+          test "$(./validate-data.sh John 0871234567)" = "PASS"
+          test "$(./validate-data.sh VeryLongNameOver15 0871234567)" = "FAIL"
+          test "$(./validate-data.sh John 08712345678)" = "FAIL"
