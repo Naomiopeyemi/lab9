@@ -1,0 +1,286 @@
+    1  mkdir -p devops/week1
+    8  git init -b main
+    9  git status
+   10  git add hello.sh
+   11  git status
+   12  git commit -m "Add hello devops week1 script"
+   14  git config --global user.name "Naomi Opeyemi"
+   15  git config -- global user.email "naomiope616@gmail.com"
+   16  git config --global user.email "naomiope616@gmail.com"
+   17  git config --global user.name
+   18  git config --global user.email
+   20  git commit -m "Add hello devops week1 script"
+   22  git log --oneline
+   23  git remote add origin https://github.com/Naomiopeyemi/devopsweek1.git
+   24  git remote -v
+   26  git push -u origin main
+   30  git status
+   31  git add hello.sh
+   32  git status
+   33  git commit -m "Update DEVOPS message"
+   34  git push
+   35  git log --oneline
+   41  git status 
+   42  git branch
+   45  nano hello.sh
+   48  git status
+   49  git diff
+   51  git add hello.sh
+   52  git commit -m "Version 3 of hello file"
+   53  git push origin main
+   54  git remote -v
+   55  git push origigit push origin main
+   56  git push orig
+   57  git push origigit push origin main
+   58  git push origig
+   59  git push orig
+   60  git push ori
+   61  git push origi
+   62  git remote -v
+   63  git push orig
+   64  git push origi
+   65  git push origi                  
+   66  git push origi
+   67  git push origin main
+   68  git log --oneline
+   69  git tag v1 9888744
+   70  git tag v2 62bfed8
+   71  git tag v3 f756d2f
+   72  git tag
+   73  git push origin --tags
+   74  mkdir week2tag
+   78  git clone https://github.com/Naomiopeyemi/devopsweek1.git .
+   79  git tag
+   80  git switch -c tag-test v1
+   83  git add hello.sh
+   84  git commit -m "Tag test version"
+   85  git push -u origin tag-test
+   86  git log --oneline
+   87  git log --oneline main
+   88  git status
+   89  git switch main
+   95  git branch
+   98  git branch
+   99  git checkout -b CR101
+  103  git add cr101.py
+  104  git commit -m "Added CR101 file"
+  105  git push -u origin CR101
+  106  git checkout main
+  107  git checkout -b CR102
+  109  git add cr102.py
+  110  git commit -m "Added CR102 file"
+  111  git push -u origin CR102
+  112  git branch -a
+  113  git checkout main
+  114  git pull origin main
+  115  git merge CR102
+  116  git push origin main
+  117  git branch -d CR102
+  118  git push origin --delete CR102
+  119  git branch -a
+  120  git clone https://github.com/Naomiopeyemi/devopsProj.git
+  127  git add count*.sh
+  128  git commit -m "Add 10 counting shell scripts"
+  129  git push origin HEAD
+  133  git status
+  134  git add count10.sh
+  135  git commit -m "Fix count10 script, fixes #12"
+  136  git push origin main
+  145  git clone git@github.com:pearse1104/x00196425.git
+  148  git add cloud-test.txt
+  149  git commit -m "Add cloud test file"
+  150  git push origin main
+  151  mkdir v1
+  153  git clone https://github.com/NaomiOpeyemi/devopsProj1.git
+  155  mkdir v1
+  157  git clone https://github.com/NaomiOpeyemi/devopsProj1.git
+  160  git clone https://github.com/Naomiopeyemi/devopsProj.git
+  162  git switch -c ONE-V1
+  163  git clone https://github.com/Naomiopeyemi/devopsProj.git
+  165  git switch -c ONE-V1
+  166  git branch
+  169  nano count1.sh
+  171  git add count1.sh
+  172  git commit -m "Change count1 to ONE(1)"
+  173  git push -u origin ONE-V1
+  175  mkdir v2
+  177  git clone https://github.com/Naomiopeyemi/devopsProj.git
+  179  git switch -c ONE-V2
+  180  nano count1.sh
+  182  git branch
+  183  git add count1.sh
+  184  git commit -m "Change count1 to 1(ONE)"
+  185  git push -u origin ONE-V2
+  187  mkdir mergeTest
+  189  git clone https://github.com/Naomiopeyemi/devopsProj.git
+  191  git switch main
+  192  git fetch origin
+  193  git merge origin/ONE-V1
+  194  git merge origin/ONE-V2
+  195  nano count1.sh
+  197  nano count1.sh
+  199  git add count1.sh
+  200  git commit -m "Resolve conflict keeping ONE-V1"
+  201  git push origin main
+  203  git status
+  206  mkdir v1-2
+  208  git clone https://github.com/Naomiopeyemi/devopsProj.git
+  210  git switch -c TWO-V1
+  212  nano count2.sh
+  214  git add count2.sh
+  215  git commit -m "Change count2 to TWO(2)"
+  216  git push -u origin TWO-V1
+  218  mkdir v2-2
+  220  git clone https://github.com/Naomiopeyemi/devopsProj.git
+  222  git switch -c TWO-V2
+  223  nano count2.sh
+  225  git branch
+  226  git add count2.sh
+  227  git commit -m "Change count2 to 2(TWO)"
+  228  git push -u origin TWO-V2
+  229  gh --version
+  230  git --version
+  231  gh auth login
+  232  gh auth status
+  233  nano q1.sh
+  235  mkdir -p ~/github-lab
+  238  nano q2.sh
+  240  nano q5.sh
+  242  gh issue view 1 --repo Naomiopeyemi/lab6
+  243  gh repo clone Naomiopeyemi/lab6
+  245  git switch -c Q12345
+  248  nano q3.sh
+  251  nano q2.sh
+  254  gh api repos/Naomiopeyemi/lab6/collaborators/lab6testaccount/permission
+  255  nano q3.sh
+  258  git status
+  259  git add q1.sh q2.sh q3.sh q5.sh
+  260  git commit -m "Add lab6 shell scripts"
+  261  git push -u origin Q12345
+  265  nano q4.sh
+  267  git status
+  268  git add q4.sh
+  269  git commit -m "Add q4 collaborator removal script"
+  270  git push origin Q12345
+  271  git pull --rebase origin Q12345
+  272  git push origin Q12345
+  273  git status
+  274  gh api repos/Naomiopeyemi/lab6/collaborators/lab6testaccount/permission
+  275  gh auth status
+  276  gh auth switch
+  277  gh auth status
+  278  gh auth login --hostname github.com --web
+  279  gh auth status
+  280  gh auth setup-git
+  281  gh api user-jq .login
+  282  git switch -c collaborator-access-test
+  284  git add access-test.txt
+  285  git commit -m "Test push after collaborator removal"
+  286  git -c credential.helper='!gh auth git-credential' push origin collaborator-access-test
+  287  gh auth switch -u Naomiopeyemi
+  289  git switch main
+  290  git pull origin main
+  292  nano q7.sh
+  293  nano q8.sh
+  296  git add q7.sh q8.sh
+  297  git commit -m "Add q7 and q8 GitHub CLI scripts"
+  298  git push origin main
+  299  git status
+  301  git branch -a
+  302  git ls-tree -r --name-only origin/Q12345
+  303  git restore --source=origin/Q12345 -- q4.sh
+  306  git add q4.sh
+  307  git commit -m "Add q4 collaborator removal script"
+  308  git push origin main
+  309  git status
+  313  gh pr list --state all
+  314  gh pr view 2 --json state,mergedAt
+  315  gh issue list --state all
+  316  gh issue view 1 --json title,body,assignees,labels
+  317  git branch -a
+  318  git ls-tree -r --name-only origin/Q12345
+  319  git clone https://github.com/pearse1104/CA1-CLOUD.git
+  325  git remote remove origin
+  326  git remote add origin https://github.com/Naomiope616@gmail.com/devopsCA1cloud.git
+  327  git add user.sh myID.txt
+  328  git commit -m "Add user script and Linux ID"
+  329  git branch -M main
+  330  git push -u origin main
+  331  git add user.sh myID.txt
+  332  git commit -m "Add user script and Linux ID"
+  333  git branch -M main
+  334  git push -u origin main
+  335  git remote add origin https://github.com/Naomiope616@gmail.com/devopsCA1cloud.git
+  336  git push -u origin main
+  337  git remote add origin https://github.com/Naomiopeyemi/devopsCA1cloud.git
+  338  git push -u origin main
+  339  git remote remove origin
+  340  git remote add origin https://github.com/Naomiopeyemi/devopsCA1cloud.git
+  341  git add user.sh myID.txt
+  342  git commit -m "Add user script and Linux ID"
+  343  git branch -M main
+  344  git push -u origin main
+  345  git pull origin main --allow-unrelated-histories --no-rebase
+  346  git push -u origin main
+  351  git add user.sh myID.txt
+  352  git commit -m "Add user script and ID"
+  353  git push origin main
+  354  git switch -c myCloudBranch
+  355  git branch
+  356  nano myID.txt
+  359  git add myID.txt
+  360  git commit -m "Second Version"
+  361  git push -u origin myCloudBranch
+  362  git switch main
+  363  gh auth login
+  364  git --version
+  365  gh --version
+  367  sudo apt install gh -y
+  368  gh auth login
+  369  gh auth status
+  370  mkdir lab9
+  371  cd lab9
+  372  git init -b main
+  373  gh repo create lab9 --public --source=. --remote=origin
+  374  gh repo view --web
+  375  gh label create EPIC --color "8B5CF6" --description "Epic for Lab 9"
+  376  gh issue create --title "do lab9" --body "Complete Lab 9" --label "EPIC"
+  377  gh issue list
+  378  gh label create enhancement --color "A2EEEF" --force
+  379  gh issue create   --title "create validate-data script"   --body "Create a script to validate name and mobile number"   --label enhancement   --assignee "@me"
+  380  nano validate-data.sh
+  381  chmod +x validate-data.sh
+  382  ./validate-data.sh John 0871234567
+  383  ./validate-data.sh VeryLongNameOver15 0871234567
+  384  ./validate-data.sh John 08712345678
+  385  gh issue create --title "create yaml test script" --body "Create GitHub Actions workflow for validation tests"  --label enhancement  --assignee "@me"
+  386  gh issue list
+  387  mkdir -p .github/workflows
+  388  nano .github/workflows/basictests.yml
+  390  git config --global user.name Naomi Opeyemi
+  391  git config --global user.email naomiope616@gmail.com
+  392  git add .
+  393  git commit -m "Add validation script and GitHub Actions"
+  394  git push -u origin main
+  395  gh repo view --web
+  396  gh issue list
+  397  gh issue close 2
+  398  gh issue close 3
+  399  gh issue create  --title "create lab9 project" --body "Create project with Labels Title and Assignees columns" --label enhancement --assignee "@me"
+  400  gh issue close 4
+  401  git switch -c test
+  402  git branch
+  403  nano validate-data.sh
+  404  ./validate-data.sh John 0871234567
+  405  ./validate-data.sh VeryLongNameOver15 0871234567
+  406  ./validate-data.sh John 08712345678
+  407  git add validate-data.sh
+  408  git commit -m "Increase name limit to 20"
+  409  git push -u origin test
+  410  nano .github/workflows/basictests.yml
+  411  git add .github/workflows/basictests.yml
+  412  git commit -m "Enable Actions on main and test"
+  413  git push origin test
+  414  history > history.txt
+  415  nano history.txt
+  416  history > history.txt
